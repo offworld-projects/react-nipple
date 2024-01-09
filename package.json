@@ -1,0 +1,64 @@
+{
+  "_from": "ow-react-nipple",
+  "_id": "ow-react-nipple@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-qiPHyy94kPI+mjEKl0s50KyefUMkF5ZPqcHBQJIzDWu0jfvc0YjQ0FnBuf0mkiuKWOPGDHayVasil73b2Da/FQ==",
+  "_location": "/ow-react-nipple",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ow-react-nipple",
+    "name": "ow-react-nipple",
+    "escapedName": "ow-react-nipple",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "",
+  "_shasum": "23d98109e35eb4106f11055b8273fb6ee660bd7d",
+  "_spec": "react-nipple",
+  "_where": "/home/offworld/dev_ws/swarm-robotic-mining/dev_ws/src/bot_teleops_web/client",
+  "bugs": {
+    "url": "https://github.com/loopmode/react-nipple/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "autobind-decorator": "^2.1.0",
+    "classnames": "^2.2.6",
+    "lodash.isequal": "^4.5.0",
+    "nipplejs": "^0.7.1"
+  },
+  "deprecated": false,
+  "description": "A react wrapper for the [nipplejs](https://www.npmjs.com/package/nipplejs) on-screen-joystick.",
+  "devDependencies": {
+    "@loopmode/babel6-base": "^0.0.6",
+    "react": "^16.4.1"
+  },
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "ow-react-nipple",
+  "peerDependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib --copy-files",
+    "build:full": "yarn clean && yarn eslint --fix && yarn docs && yarn build",
+    "build:watch": "yarn build --watch",
+    "clean": "rm -rf lib/*",
+    "docs": "esdoc",
+    "eslint": "eslint src",
+    "prepublishOnly": "yarn build:full"
+  },
+  "version": "1.0.3"
+}
